@@ -22,7 +22,6 @@ bool ends_with(const std::string& str, const std::string& suffix) {
 // type_name: Type name for log display
 template <typename T>
 int convert_fmt(const char* input_path, const char* output_path, const string& type_name) {
-    // 1. 打开输入
     ifstream in(input_path, ios::binary);
     if (!in) {
         cerr << "Error: Cannot open input file " << input_path << endl;
